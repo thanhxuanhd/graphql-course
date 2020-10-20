@@ -6,8 +6,6 @@ Client using Angular, React.
 
 - Server 
 
-``
-
 ```cmd
 cd .\server
 npm install -g nodemon
