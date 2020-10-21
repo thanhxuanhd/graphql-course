@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 // Connect to database
-mongoose.connect('mongodb+srv://thanhxuanhd:IZ52Ux2KZTVrITjW@cluster0.hghqt.mongodb.net/graphql-course?retryWrites=true&w=majority', {useNewUrlParser: true});
+mongoose.connect('', {useNewUrlParser: true});
 mongoose.connection.once('open', ()=>{
   console.log('connection database');
 });
