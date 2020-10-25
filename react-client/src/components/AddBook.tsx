@@ -1,20 +1,10 @@
 import React, { Component } from 'react';
 import { graphql, ChildDataProps  } from "@apollo/react-hoc";
-import { Mutation } from 'react-apollo';
 import { getAuthorsQuery, addBookMutation } from '../queries/queries';
 import { AuthorData } from '../interfaces/author';
 import { Book } from '../interfaces/book';
 
 type ChildAuthorProps = ChildDataProps<{}, AuthorData>;
-
-type BookProps = {
-    name: string,
-    genre: string,
-    authorId: string
-}
-
-type ChildBookProps = ChildDataProps<BookProps, Book>;
-
 // Display Author data in select box
 const Authors = graphql<{}, AuthorData, {}, ChildAuthorProps>(getAuthorsQuery);
 
