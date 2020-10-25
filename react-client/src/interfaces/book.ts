@@ -2,7 +2,8 @@
 export interface Book {
     name: string,
     genre: string,
-    id: string
+    id: string,
+    authorId: string
 }
 
 export interface BookData {
